@@ -18,7 +18,7 @@ export default async function EditProductPage({
         return (
             <main>
                 <h2>Editar producto</h2>
-                //manda a llamar los productos
+                {/*manda a llamar los productos*/}
                 <ProductForm product={product} />
             </main>
         );
