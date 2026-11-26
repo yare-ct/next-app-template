@@ -70,7 +70,8 @@ export async function searchProduct(query:string): Promise<product[]> {
     }
 
     //Retornar array con la lista de productos
-    return (await response.json()) as product[];
+        const data = await response.json();
+    return data.results as product[];
 }
 
 export async function saveProduct(product:product): Promise<product> {
